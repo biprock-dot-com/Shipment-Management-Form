@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipment Management Form</title>
+   
+
+    <link rel="stylesheet" href="style.css">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="register">
+            <h2>Shipment Form</h2>
+            <h4>Please fill all the details.</h4>
+
+            <form class=""shipform", method="get">
+                <div class="form">
+                    <label >Shipment No.:</label>
+                    <input type="text" id = "shipno" class="details" placeholder="Enter the shipment number" onchange="getInfo()">
+                </div>
+                <br>
+                <div class="form">
+                    <label >Description :</label>
+                    <input type="textarea" id = "description" class="details" placeholder="Enter the description">
+                </div>
+                <br>
+                <div class="form">
+                    <label >Source :</label>
+                    <input type="text" id = "source" class="details" placeholder="Enter the source address">
+                </div>
+                <br>
+                <div class="form">
+                    <label >Destination :</label>
+                    <input type="text" id = "destination" class="details" placeholder="Enter the destination address">
+                </div>
+                <br>
+                <div class="form">
+                    <label >Shipping Date :</label>
+                    <input type="text" id = "shipdate" class="details" placeholder="Enter the shipping date">
+                </div>
+                <br>
+                <div class="form">
+                    <label >Delivery Date :</label>
+                    <input type="text" id = "delidate" class="details" placeholder="Enter the expected delivery date">
+                </div>
+                <br>
+                <div class="form">
+                    <button type="button" id ="save" onclick="savedata()" disabled>Save</button>
+                    <button type="button" id ="update" onclick="updatedata()" disabled>Update</button>
+                    <button type="button" id ="reset" onclick="resetform()" disabled>Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script type="text/javascript" src="file.js"></script>
+</body>
+</html>
